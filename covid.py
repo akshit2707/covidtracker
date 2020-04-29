@@ -20,11 +20,29 @@ def get_corona_details_india():
 
 	html_view = get_data(url)
 
-	print(html_view.text)
+	#use of beautifulsoup
+
+	bs = bs4.BeautifulSoup(html_view.text , 'html.parser')
+	# print(bs.prettify())
+	info_div = bs.find("div" , class_ = "site-stats-count")
+
+	print(info_div.prettify())
 
 
 
-get_corona_details_india()
+
+
+
+
+
+def main():
+
+	get_corona_details_india()
+
+
+
+if __name__ == '__main__':
+		main();
 
 
 
