@@ -49,8 +49,8 @@ def refr():
 def notify_me():
 	while True:
 
-		plyer.notification.notify(title="COVID ALERT" , message=get_corona_details_india(), timeout =10 )
-		time.sleep(20)
+		plyer.notification.notify(title="COVID ALERT" , message=get_corona_details_india(), timeout =20 )
+		time.sleep(1800)
 
 #print data in creative way
 #frontend
